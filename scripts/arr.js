@@ -1,11 +1,11 @@
-// let games = new Array(5)
-// for(i = 0 ; i < games.length; i++ ){
-//     games[i] = prompt("Enter Value for array")
-// }
+let games = new Array(5)
+for(i = 0 ; i < games.length; i++ ){
+    games[i] = prompt("Enter Value for array")
+}
 
-// for(i = 0 ; i < games.length; i++ ){
-//     document.write(games[i]+"<br>")
-// }
+for(i = 0 ; i < games.length; i++ ){
+    document.write(games[i]+"<br>")
+}
 
 let arr = [1,2,2,4,3,6]
 let myArr3 = new Array(6,"f","z");
@@ -15,14 +15,14 @@ document.write(arr.join("-") + "<br>");
 
 document.write(myArr3.pop()+"<br>")
 myArr3.push("Faraz")
-// document.write(games.sort());
+document.write(games.sort());
 
-//Table
-// let number = prompt("Enter Number ");
-// for (i=1; i<=10 ; i++){
-//     let ans = number * i;
-//     document.write(number + "x" + i + "=" + ans + "<br>");
-// }
+Table
+let number = prompt("Enter Number ");
+for (i=1; i<=10 ; i++){
+    let ans = number * i;
+    document.write(number + "x" + i + "=" + ans + "<br>");
+}
 
 document.write("<br>")
 //2d Arrays
@@ -53,3 +53,4 @@ for(rows in people){
         document.write(people[rows][col] + "<br>")
     }
 }
+
