@@ -48,6 +48,8 @@ console.log("-------------------");
 //this will return an array
 console.log(Object.keys(person));
 
+//Object.values , Object.entries yeh b hty hn
+
 console.log("-------------------");
 
 for(let key_1 of Object.keys(person)){
