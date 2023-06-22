@@ -86,6 +86,7 @@ const obj2 = {
 const newObj = {...obj1, obj2, key69: "value69", ..."abc"};
 //const newObj = {...obj1, ...["Item1" , "Item2"]};
 console.log(newObj);
+console.log("-------------------");
 
 //Object Destructuring
 const band ={
@@ -97,3 +98,31 @@ const band ={
 
 let {bandName , famousSong: nowImavar, ...restProps} = band;
 console.log(bandName , nowImavar , restProps);
+console.log("-------------------");
+
+//Objects inside an Array
+//very useful in realworld applications
+//array k andr alg alg objects store kr skty hn
+const users = [
+    {userId : 1, firstName : "Qamar", gender: "male"},
+    {userId : 2, firstName : "Sameer", gender: "male"},
+    {userId : 3, firstName : "Hamza", gender: "male"},
+]
+
+for (let user of users){
+    console.log(user.firstName)
+    console.log(user)
+}
+console.log("-------------------");
+for (let i in users){
+    console.log(users[i])
+    console.log(users[i].gender)
+}
+
+console.log("-------------------");
+//Nested Destructuring
+const [user1 , user2 , user3] = users;
+console.log(user1, typeof user1);
+console.log("-------------------");
+const [{firstName: nowImanewvar}, , user_3] = users;
+console.log(nowImanewvar, typeof nowImanewvar, "     ",user_3, typeof user_3);
